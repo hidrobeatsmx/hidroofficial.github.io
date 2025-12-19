@@ -3,18 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIDRO | DJ & Productor Underground</title>
+    <title>HIDRO | DJ & Productor Underground Mexicano</title>
     
-    <meta name="description" content="HIDRO - DJ y productor underground mexicano. Breakbeat, nu jazz, tech house y experimentación electrónica. Sets energéticos y producciones versátiles.">
+    <!-- Meta Descripción y SEO -->
+    <meta name="description" content="HIDRO - DJ y productor underground mexicano especializado en breakbeat, nu jazz, tech house y experimentación electrónica. Sets energéticos y producciones versátiles.">
+    <meta name="keywords" content="DJ mexicano, productor underground, breakbeat, nu jazz, tech house, electrónica experimental, música electrónica, DJ CDMX, productor musical, sets en vivo">
+    <meta name="author" content="HIDRO">
+    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:title" content="HIDRO | DJ & Productor Underground Mexicano">
     <meta property="og:description" content="Breakbeat, nu jazz, tech house y experimentación. Sets energéticos y producciones versátiles desde la escena underground.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hidroofficial.art">
+    <meta property="og:image" content="https://hidroofficial.art/og-image.jpg">
+    <meta property="og:locale" content="es_MX">
     
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HIDRO | DJ & Productor Underground Mexicano">
+    <meta name="twitter:description" content="Breakbeat, nu jazz, tech house y experimentación desde la escena underground mexicana.">
+    <meta name="twitter:image" content="https://hidroofficial.art/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Fonts con preload -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Schema Markup para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "HIDRO",
+        "jobTitle": "DJ & Productor Underground",
+        "description": "Productor y DJ mexicano con visión versátil y energética, especializado en breakbeat, nu jazz y tech house.",
+        "url": "https://hidroofficial.art",
+        "sameAs": [
+            "https://soundcloud.com/hidrobeatsproddj",
+            "https://instagram.com/hidrobeats",
+            "https://www.youtube.com/@DJHIDROMX"
+        ],
+        "knowsAbout": ["DJ", "Music Production", "Electronic Music", "Breakbeat", "Nu Jazz", "Tech House"],
+        "location": {
+            "@type": "Place",
+            "name": "Ciudad de México"
+        },
+        "email": "mailto:hidrobeatsmx@gmail.com",
+        "telephone": "+52-55-8530-2746"
+    }
+    </script>
     
     <style>
         :root {
@@ -52,6 +98,25 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+
+        /* Mejoras de accesibilidad - mejor contraste */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus visible para navegación con teclado */
+        *:focus {
+            outline: 2px solid var(--secondary);
+            outline-offset: 2px;
         }
 
         /* Header Navigation */
@@ -140,7 +205,7 @@
 
         .hero-subtitle {
             font-size: 1.3rem;
-            color: var(--accent);
+            color: #bbb; /* Mejor contraste */
             margin-bottom: 25px;
             font-weight: 300;
             max-width: 700px;
@@ -162,7 +227,7 @@
             font-weight: 400;
         }
 
-        /* Audio Player Section - MODIFICADO: Sin embed, solo botón */
+        /* Audio Player Section */
         .audio-player-section {
             padding: 50px 0;
             background: rgba(255, 255, 255, 0.02);
@@ -184,7 +249,7 @@
 
         .player-subtitle {
             font-size: 0.95rem;
-            color: var(--accent);
+            color: #bbb; /* Mejor contraste */
             margin-bottom: 25px;
             font-style: italic;
             max-width: 600px;
@@ -218,7 +283,7 @@
         .player-note {
             text-align: center;
             font-size: 0.85rem;
-            color: #666;
+            color: #777; /* Mejor contraste */
             font-style: italic;
             margin-top: 15px;
         }
@@ -503,7 +568,7 @@
             transform: translateY(-3px);
         }
 
-        /* Media Section - CON BOTONES DISCRETOS */
+        /* Media Section */
         .media-section {
             padding: 100px 0;
         }
@@ -623,7 +688,7 @@
 
         .contact-note {
             font-size: 0.9rem;
-            color: #666;
+            color: #777; /* Mejor contraste */
             margin-top: 5px;
             font-style: italic;
         }
@@ -664,7 +729,7 @@
         }
 
         .footer-text {
-            color: #666;
+            color: #777; /* Mejor contraste */
             font-size: 0.9rem;
             max-width: 500px;
             margin: 0 auto;
@@ -746,26 +811,31 @@
                 font-size: 0.8rem;
             }
         }
+
+        /* Preload de fuentes - fallback */
+        .fonts-loaded body {
+            font-family: 'Inter', sans-serif;
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <header class="nav-header">
+    <header class="nav-header" role="banner">
         <div class="container nav-container">
-            <a href="#" class="nav-brand">HIDRO</a>
-            <nav class="nav-links">
-                <a href="#styles" class="nav-link">Enfoques</a>
-                <a href="#contexts" class="nav-link">Formatos</a>
-                <a href="#technical" class="nav-link">Técnico</a>
-                <a href="#experience" class="nav-link">Trayectoria</a>
-                <a href="#media" class="nav-link">Material</a>
-                <a href="#contact" class="nav-link">Contacto</a>
+            <a href="#" class="nav-brand" aria-label="HIDRO - Inicio">HIDRO</a>
+            <nav class="nav-links" role="navigation" aria-label="Navegación principal">
+                <a href="#styles" class="nav-link" aria-label="Enfoques musicales">Enfoques</a>
+                <a href="#contexts" class="nav-link" aria-label="Formatos de presentación">Formatos</a>
+                <a href="#technical" class="nav-link" aria-label="Especificaciones técnicas">Técnico</a>
+                <a href="#experience" class="nav-link" aria-label="Trayectoria profesional">Trayectoria</a>
+                <a href="#media" class="nav-link" aria-label="Material y redes sociales">Material</a>
+                <a href="#contact" class="nav-link" aria-label="Información de contacto">Contacto</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" aria-label="Presentación de HIDRO">
         <div class="container">
             <div class="hero-content">
                 <div class="document-type">DJ & Productor Underground</div>
@@ -780,8 +850,8 @@
         </div>
     </section>
 
-    <!-- Audio Player - BOTÓN DIRECTO A SOUNDCLOUD -->
-    <section class="audio-player-section">
+    <!-- Audio Player -->
+    <section class="audio-player-section" aria-label="Set de muestra">
         <div class="container">
             <div class="player-container">
                 <div class="player-title">ROMELIA SET - Breakbeat & Nu Jazz</div>
@@ -791,8 +861,13 @@
                     con volumen moderado y acústica impecable."
                 </p>
                 
-                <a href="https://soundcloud.com/hidrobeatsproddj" class="soundcloud-btn" target="_blank">
-                    <i class="fab fa-soundcloud"></i> ESCUCHAR SET EN SOUNDCLOUD
+                <a href="https://soundcloud.com/hidrobeatsproddj" 
+                   class="soundcloud-btn" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   aria-label="Escuchar set en SoundCloud">
+                    <i class="fab fa-soundcloud" aria-hidden="true"></i> 
+                    ESCUCHAR SET EN SOUNDCLOUD
                 </a>
                 
                 <p class="player-note">Set de muestra - Recomendado para restaurantes & terrazas con concepto especial</p>
@@ -802,9 +877,9 @@
     </section>
 
     <!-- Styles Section -->
-    <section id="styles" class="styles-section">
+    <section id="styles" class="styles-section" aria-labelledby="styles-heading">
         <div class="container">
-            <h2 class="section-title">Mis Enfoques</h2>
+            <h2 class="section-title" id="styles-heading">Mis Enfoques</h2>
             
             <div class="styles-grid">
                 <div class="style-card">
@@ -844,13 +919,13 @@
     </section>
 
     <!-- Contexts -->
-    <section id="contexts" class="context-section">
+    <section id="contexts" class="context-section" aria-labelledby="contexts-heading">
         <div class="container">
-            <h2 class="section-title">Formatos de Presentación</h2>
+            <h2 class="section-title" id="contexts-heading">Formatos de Presentación</h2>
             
             <div class="context-grid">
                 <div class="context-card">
-                    <i class="fas fa-music context-icon"></i>
+                    <i class="fas fa-music context-icon" aria-hidden="true"></i>
                     <h3>Clubes & Antros</h3>
                     <p>Sesiones para espacios nocturnos donde la energía y selección musical son clave. Adaptación al vibe del lugar y conexión con el público.</p>
                     <ul class="context-features">
@@ -862,7 +937,7 @@
                 </div>
                 
                 <div class="context-card">
-                    <i class="fas fa-landmark context-icon"></i>
+                    <i class="fas fa-landmark context-icon" aria-hidden="true"></i>
                     <h3>Espacios Culturales</h3>
                     <p>Presentaciones en galerías, museos y centros culturales. Enfoque conceptual y experimental.</p>
                     <ul class="context-features">
@@ -874,7 +949,7 @@
                 </div>
                 
                 <div class="context-card">
-                    <i class="fas fa-calendar-alt context-icon"></i>
+                    <i class="fas fa-calendar-alt context-icon" aria-hidden="true"></i>
                     <h3>Eventos Especiales</h3>
                     <p>Residencias, festivales y proyectos temporales. Desarrollo de conceptos específicos.</p>
                     <ul class="context-features">
@@ -889,9 +964,9 @@
     </section>
 
     <!-- Technical -->
-    <section id="technical" class="technical-section">
+    <section id="technical" class="technical-section" aria-labelledby="technical-heading">
         <div class="container">
-            <h2 class="section-title">Especificaciones Técnicas</h2>
+            <h2 class="section-title" id="technical-heading">Especificaciones Técnicas</h2>
             
             <div class="technical-grid">
                 <div class="tech-card">
@@ -932,9 +1007,9 @@
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="experience-section">
+    <section id="experience" class="experience-section" aria-labelledby="experience-heading">
         <div class="container">
-            <h2 class="section-title">Trayectoria</h2>
+            <h2 class="section-title" id="experience-heading">Trayectoria</h2>
             
             <div class="timeline">
                 <div class="timeline-item">
@@ -965,9 +1040,9 @@
     </section>
 
     <!-- Press Section -->
-    <section class="press-section">
+    <section class="press-section" aria-labelledby="press-heading">
         <div class="container">
-            <h2 class="section-title">Reconocimientos</h2>
+            <h2 class="section-title" id="press-heading">Reconocimientos</h2>
             <div class="press-logos">
                 <div class="press-item">Artista en Evolución</div>
                 <div class="press-item">Versatilidad Sonora</div>
@@ -978,38 +1053,49 @@
         </div>
     </section>
 
-    <!-- Media Section - CON BOTONES DISCRETOS -->
-    <section id="media" class="media-section">
+    <!-- Media Section -->
+    <section id="media" class="media-section" aria-labelledby="media-heading">
         <div class="container">
-            <h2 class="section-title">Contenido y Redes</h2>
+            <h2 class="section-title" id="media-heading">Contenido y Redes</h2>
             <p class="media-intro">Explora mi trabajo a través de diferentes plataformas y formatos.</p>
             
             <div class="asset-grid">
                 <div class="asset-card">
-                    <i class="fas fa-headphones asset-icon"></i>
+                    <i class="fas fa-headphones asset-icon" aria-hidden="true"></i>
                     <h4>Audio & Sets</h4>
                     <p>Sets completos, producciones originales y sesiones en vivo. Actualizaciones constantes.</p>
-                    <a href="https://soundcloud.com/hidrobeatsproddj" class="asset-btn" target="_blank">
-                        <i class="fab fa-soundcloud"></i> SoundCloud
+                    <a href="https://soundcloud.com/hidrobeatsproddj" 
+                       class="asset-btn" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Ir a SoundCloud">
+                        <i class="fab fa-soundcloud" aria-hidden="true"></i> SoundCloud
                     </a>
                 </div>
                 
                 <div class="asset-card">
-                    <i class="fas fa-video asset-icon"></i>
+                    <i class="fas fa-video asset-icon" aria-hidden="true"></i>
                     <h4>Video & Visuales</h4>
                     <p>Videoclips, sesiones en estudio y contenido audiovisual.</p>
-                    <!-- BOTÓN DE YOUTUBE DISCRETO -->
-                    <a href="https://www.youtube.com/watch?v=YMswc5pkVL8" class="asset-btn" target="_blank">
-                        <i class="fab fa-youtube"></i> YouTube
+                    <a href="https://www.youtube.com/@DJHIDROMX/videos" 
+                       class="asset-btn" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Ir a YouTube">
+                        <i class="fab fa-youtube" aria-hidden="true"></i> YouTube
                     </a>
                 </div>
                 
                 <div class="asset-card">
-                    <i class="fas fa-images asset-icon"></i>
+                    <i class="fas fa-images asset-icon" aria-hidden="true"></i>
                     <h4>Redes & Actualidad</h4>
                     <p>Detrás de cámaras, anuncios de eventos y conexión directa.</p>
-                    <a href="https://www.instagram.com/hidrobeats/" class="asset-btn" target="_blank">
-                        <i class="fab fa-instagram"></i> Instagram
+                    <a href="https://www.instagram.com/hidrobeats/" 
+                       class="asset-btn" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Ir a Instagram">
+                        <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
                     </a>
                 </div>
             </div>
@@ -1017,25 +1103,28 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
         <div class="container">
-            <h2 class="section-title">Contacto Profesional</h2>
+            <h2 class="section-title" id="contact-heading">Contacto Profesional</h2>
             
             <div class="contact-info">
                 <div class="contact-item">
                     <span class="contact-label">Booking & Contrataciones</span>
                     <div class="contact-detail">
-                        <a href="mailto:salcedoyunnuen@gmail.com">salcedoyunnuen@gmail.com</a>
-                        <a href="tel:+525585302746">+52 55 8530 2746</a>
-                        <span class="contact-note">Coordinación: Athziry Salcedo</span>
+                        <a href="mailto:salcedoyunnuen@gmail.com" aria-label="Enviar correo a booking">salcedoyunnuen@gmail.com</a>
+                        <a href="tel:+525585302746" aria-label="Llamar a booking">+52 55 8530 2746</a>
+                        <span class="contact-note">Manager: Athziry Chavarria</span>
                     </div>
                 </div>
                 
                 <div class="contact-item">
                     <span class="contact-label">Artista</span>
                     <div class="contact-detail">
-                        <a href="mailto:hidrobeatsmx@gmail.com">hidrobeatsmx@gmail.com</a>
-                        <a href="https://hidroofficial.art" target="_blank">hidroofficial.art</a>
+                        <a href="mailto:hidrobeatsmx@gmail.com" aria-label="Enviar correo a artista">hidrobeatsmx@gmail.com</a>
+                        <a href="https://hidroofficial.art" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Visitar sitio web oficial">https://hidroofficial.art</a>
                         <span class="contact-note">Ciudad de México</span>
                     </div>
                 </div>
@@ -1050,14 +1139,16 @@
                 </div>
             </div>
             
-            <a href="mailto:salcedoyunnuen@gmail.com?subject=Propuesta%20para%20HIDRO&body=Hola,%20me%20interesa%20trabajar%20contigo..." class="download-btn">
-                <i class="fas fa-paper-plane"></i> Enviar Propuesta
+            <a href="mailto:salcedoyunnuen@gmail.com?subject=Consulta%20sobre%20fechas%20disponibles%20de%20HIDRO&body=Hola%20Athziry,%0A%0AMe%20interesa%20conocer%20las%20fechas%20disponibles%20para%20contratar%20a%20HIDRO.%0A%0APor%20favor%20proporcióname%20información%20sobre:%0A-%20Fechas%20disponibles%0A-%20Tarifas%0A-%20Requerimientos%20técnicos%0A%0AEspero%20tu%20respuesta.%0A%0ASaludos," 
+               class="download-btn" 
+               aria-label="Consultar fechas disponibles de HIDRO">
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> Consultar Fechas Disponibles
             </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-logo">HIDRO</div>
             <p class="footer-text">
@@ -1069,7 +1160,7 @@
     </footer>
 
     <script>
-        // Smooth scroll para navegación
+        // Smooth scroll con debounce para mejor performance
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1081,6 +1172,9 @@
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
+                    
+                    // Actualizar URL sin recargar la página
+                    history.pushState(null, null, targetId);
                 }
             });
         });
@@ -1090,18 +1184,22 @@
             const year = new Date().getFullYear();
             document.getElementById('current-year').textContent = year;
             
-            // Actualizar enlaces activos al navegar
+            // Indicar que las fuentes están cargadas
+            document.documentElement.classList.add('fonts-loaded');
+            
+            // Actualizar enlaces activos al navegar con debounce
+            let scrollTimeout;
             const sections = document.querySelectorAll('section[id]');
             const navLinks = document.querySelectorAll('.nav-link');
             
-            window.addEventListener('scroll', () => {
+            function updateActiveLink() {
                 let current = '';
                 
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
                     
-                    if (scrollY >= (sectionTop - 100)) {
+                    if (window.scrollY >= (sectionTop - 100)) {
                         current = section.getAttribute('id');
                     }
                 });
@@ -1112,7 +1210,29 @@
                         link.classList.add('active');
                     }
                 });
+            }
+            
+            window.addEventListener('scroll', () => {
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(updateActiveLink, 100);
             });
+            
+            // Inicializar estado activo
+            updateActiveLink();
+        });
+        
+        // Manejar navegación hacia atrás/adelante
+        window.addEventListener('popstate', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
         });
     </script>
 </body>
